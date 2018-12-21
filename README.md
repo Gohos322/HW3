@@ -22,9 +22,11 @@ The Binary Search Tree relies on the property that keys that are less than the p
 For the Binary Search Tree, both the add operation and the return of the minimum and the maximum value were faster than the ones of QuickSort and both the BubbleSorts, but slower than the HeapSort ones.
 To Measure time I originally used time.time(), but I found out that the &Delta; Time measured was on the order of thenths of a second, so i moved to datetime.now(), wich i used to create a function that measure difference of time in the order of milliseconds. I then used pandas to create a DataFrame and stored the result of <br>3</b> repetition in a .cvs <a href="https://github.com/Gohos322/HW3/blob/master/benchmark_data.csv">file</a><br>
 <br>
-<header><h2>Performance of Add</h2></header> <br>
+<header><h2>Overall Performances</h2></header> <br>
 <br>
 <img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20Add.png">
 <br>
+<img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20GetMin.png">
 <br>
-As shown in the graph, the Binary Search Tree was the fastest in adding the element in the new sorted array, while the Bubble Sort Algorithm was the slowest, followed by the its improved version.
+<img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20GetMax.png">
+<br>
