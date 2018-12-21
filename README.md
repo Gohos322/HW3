@@ -12,6 +12,4 @@ To Measure time I originally used time.time(), but I found out that the &Delta; 
 <br>
 # Performance of Add <br>
 <br>
-![Add](
-        HW3/Performance of Add.png
-      )
+<center><img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20Add.png"></center>
