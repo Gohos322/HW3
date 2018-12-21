@@ -10,6 +10,6 @@ To create and sorting the Heap I used the Heap python native library. The class 
 The Binary Search Tree relies on the property that keys that are less than the parent are found in the left subtree, and keys that are greater than the parent are found in the right subtree. This property remains contant for parents and childs. On average a Binary Search tree with <b>n</b> node have <b>O(logn)</b> height and searching requires time proportional to the height of the tree, which is <b>O(logn)</b><br>
 To Measure time I originally used time.time(), but I found out that the &Delta; Time measured was on the order of thenths of a second, so i moved to datetime.now(), wich i used to create a function that measure difference of time in the order of milliseconds. I then used pandas to create a DataFrame and stored the result of <br>3</b> repetition in a .cvs <a href="https://github.com/Gohos322/HW3/blob/master/benchmark_data.csv">file</a><br>
 <br>
-#Performance of Add <br>
+## Performance of Add <br>
 <br>
-![Performance of Add](https://github.com/Gohos322/HW3/blob/master/Performance%20of%20Add.png)
+![Performance of Add] (https://github.com/Gohos322/HW3/blob/master/Performance%20of%20Add.png)
