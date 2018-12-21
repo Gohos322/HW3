@@ -2,6 +2,7 @@
 <br>
 <br>
 The purpose of this project was to find out wich algorithm among BubbleSort, QuickSort, HeapSort and Binary Search Tree was the fastest in sorting *n* random integer with <b>0 < n < 1000</b>, returning the maximum and the minimum integer in the list.<br>
+I runned my tests with an IntelCore i3-6120U @2.30 Ghz with 4 Gb of RAM.<br>
 The QuickSort algorithm split a list of length <b>n</b> using a pivot element choosed in the middle of the list, ending up with a <b>logn</b> divisions. In order to find the split point, each of the <b>n</b> items needs to be checked against the pivot value. This result in a <b>nlogn</b> complexity. Trying to avoid the worst case scenario, where the splitting point is very skewed to the left or the right, leaving a very uneven division I used a randomly selected pivot value.<br>
 To return the minimum and the maximum value i just returned the element of index[0] and the element of index[-1] of the sorted list.<br> 
 <img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20QuickSort%20Solution.png"><br>
@@ -20,7 +21,7 @@ The Binary Search Tree relies on the property that keys that are less than the p
 <img src="https://github.com/Gohos322/HW3/blob/master/Performance%20of%20BinarySearchTree%20Sort%20Solution.png"><br>
 <br>
 For the Binary Search Tree, both the add operation and the return of the minimum and the maximum value were faster than the ones of QuickSort and both the BubbleSorts, but slower than the HeapSort ones.<br>
-To Measure time I originally used time.time(), but I found out that the &Delta; Time measured was on the order of thenths of a second, so i moved to datetime.now(), wich i used to create a function that measure difference of time in the order of milliseconds. I then used pandas to create a DataFrame and stored the result of <br>3</b> repetition in a .cvs <a href="https://github.com/Gohos322/HW3/blob/master/benchmark_data.csv">file</a><br>
+To Measure time I originally used time.time(), but I found out that the &Delta; Time measured was on the order of thenths of a second. I wanted to have a more precise set of misurations, so i moved to datetime.now(), wich i used to create a function that measure difference of time in the order of milliseconds. I then used pandas to create a DataFrame and stored the result of <br>3</b> repetition in a .cvs <a href="https://github.com/Gohos322/HW3/blob/master/benchmark_data.csv">file</a><br>
 <br>
 <header><h2>Overall Performances</h2></header> <br>
 <br>
